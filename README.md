@@ -1,2 +1,3 @@
-# DeOcc123
-Sigle occluded image to 3D whole object
+# DeOcc-1-to-3
+DeOcc-1-to-3: 3D De-Occlusion from a Single Image via Self-Supervised
+Multi-View Diffusion
