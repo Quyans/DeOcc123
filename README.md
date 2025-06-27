@@ -3,7 +3,7 @@
 <p align="center">
   <h1 align="center"> <b>DeOcc-1-to-3</b>: 3D De-Occlusion from a Single Image via Self-Supervised Multi-View Diffusion</h1>
   <p align="center">
-        <a href="https://arxiv.org/pdf/2506.21544"><img src='https://img.shields.io/badge/arXiv-DeOcc123-red?logo=arxiv' alt='Paper PDF'></a>
+        <a href="https://arxiv.org/abs/2506.21544"><img src='https://img.shields.io/badge/arXiv-DeOcc123-red?logo=arxiv' alt='Paper PDF'></a>
         <a href=''><img src='https://img.shields.io/badge/Project_Page-DeOcc123-green' alt='Project Page'></a>
 		<a href=""><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Gradio%20Demo-Huggingface-orange"></a> <br>
   </p>
