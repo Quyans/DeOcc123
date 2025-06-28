@@ -42,6 +42,12 @@ From a **single occluded image**, it synthesizes **six structure-consistent nove
 
 ---
 
+## 🎆 Gradio Demo
+
+https://github.com/user-attachments/assets/750cb886-26bf-41b6-8c25-f1845030a93c
+
+
+
 <!-- ## 🔬 Method Overview
 
 <div align="center">
