@@ -16,7 +16,7 @@
 </p>
 
 <div align="center">
-  <img src="Assets/teaser.png" alt="Teaser" width="600"/>
+  <img src="Assets/teaser.png" alt="Teaser"/>
 </div>
 
 ## ⚡ TL;DR
