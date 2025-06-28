@@ -6,7 +6,7 @@
   
 <p align="center">
 	<a href="https://arxiv.org/abs/2506.21544"><img src='https://img.shields.io/badge/arXiv-DeOcc123-red?logo=arxiv' alt='Paper PDF'></a>
-	<a href=''><img src='https://img.shields.io/badge/Project_Page-DeOcc123-green' alt='Project Page'></a>
+	<a href='https://quyans.github.io/DeOcc-1-to-3/'><img src='https://img.shields.io/badge/Project_Page-DeOcc123-green' alt='Project Page'></a>
 <!-- 	<a href=""><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Gradio%20Demo-Huggingface-orange"></a> <br> -->
 </p>
 
