@@ -1,5 +1,3 @@
-
-
 <p align="center">
   <h1 align="center"> <b>DeOcc-1-to-3</b></h1> 
 </p>
@@ -7,7 +5,7 @@
 <p align="center">
 	<a href="https://arxiv.org/abs/2506.21544"><img src='https://img.shields.io/badge/arXiv-DeOcc123-red?logo=arxiv' alt='Paper PDF'></a>
 	<a href='https://quyans.github.io/DeOcc123/'><img src='https://img.shields.io/badge/Project_Page-DeOcc123-green' alt='Project Page'></a>
-<!-- 	<a href=""><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Gradio%20Demo-Huggingface-orange"></a> <br> -->
+	<a href="https://drive.google.com/file/d/1RBACpAznCLsqt70VsYuqLAPg3rhWl2_r/view?usp=drive_link"><img src="https://img.shields.io/badge/Model_Weight-DeOcc123-blue?logo=googledrive"></a> <br>
 </p>
 
 <p align="center">
@@ -16,22 +14,16 @@
 </p>
 
 <div align="center">
-  <img src="Assets/teaser.png" alt="Teaser"/>
+  <img src="assets/teaser.png" alt="Teaser"/>
 </div>
+
+---
 
 ## ⚡ TL;DR
 
 **DeOcc-1-to-3** is a 3D de-occlusion framework.   
 From a **single occluded image**, it synthesizes **six structure-consistent novel views**, enabling **faithful Amodal 3D reconstruction**.
 
-
-<!-- ---
-
-## 📝 Project Overview
-
-**DeOcc-1-to-3** is an end-to-end framework for **occlusion-aware multi-view image generation** from a single occluded image. It leverages **self-supervised fine-tuning of a multi-view diffusion model** to synthesize structurally consistent novel views, enabling **faithful 3D reconstruction** under occlusions without manual annotations. -->
-
-<!-- --- -->
 
 ## 🚀 Key Features
 
@@ -40,34 +32,50 @@ From a **single occluded image**, it synthesizes **six structure-consistent nove
 ✅ Seamless integration with existing 3D reconstruction pipelines (e.g., InstantMesh)  
 ✅ Introduces the first **benchmark for occlusion-aware 3D reconstruction**
 
----
+
+## 🛠️ Installation
+
+```bash
+git clone https://github.com/Quyans/DeOcc123
+cd DeOcc123
+
+# create environment
+conda env create -f environment.yml
+conda activate deocc123
+
+# prepare SAM model
+mkdir ckpts
+curl -L -o ckpts/sam_vit_h.pth https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth
+```
+
+Download pretrained model weight from [Google Drive](https://drive.google.com/file/d/1RBACpAznCLsqt70VsYuqLAPg3rhWl2_r/view?usp=drive_link) and put it under the `ckpts/` directory.
 
 ## 🎆 Gradio Demo
+
+You can quickly try out the model with our interactive Gradio demo:
+```bash
+python app.py
+```
+
+Here is a short video demonstrating how to use the demo:
 
 https://github.com/user-attachments/assets/750cb886-26bf-41b6-8c25-f1845030a93c
 
 
+## 📄 Citation
 
-<!-- ## 🔬 Method Overview
+If you find our work useful, please cite:
 
-<div align="center">
-  <img src="assets/pipeline.png" alt="Pipeline" width="700"/>
-</div>
+```bibtex
+@article{qu2025deocc,
+    title={DeOcc-1-to-3: 3D De-Occlusion from a Single Image via Self-Supervised Multi-View Diffusion},
+    author={Qu, Yansong and Dai, Shaohui and Li, Xinyang and Wang, Yuze and Shen, You and Cao, Liujuan and Ji, Rongrong},
+    journal={arXiv preprint arXiv:2506.21544},
+    year={2025}
+}
+```
 
-1. **Random Occlusion:** Generate occluded images using SA-1B segmentation masks.  
-2. **Pseudo-GT Generation:** Use a frozen multi-view diffusion model to produce six-view pseudo-ground-truths.  
-3. **Self-Supervised Fine-Tuning:** Train the student model with a denoising objective to predict consistent novel views from occluded inputs.  
-4. **3D Reconstruction:** Feed synthesized views into a downstream reconstruction module (e.g., InstantMesh) to recover complete 3D geometry.
+## 🌟 Acknowledgements
 
---- -->
-
-<!-- ## 📦 Installation
-
-```bash
-git clone https://github.com/Quyans/DeOcc123.git
-cd DeOcc123
-conda env create -f environment.yml
-conda activate deocc123 -->
-
-Code, Dataset, and Models will be released soon, stay tuned!
-
+Thanks to the following great repositories: 
+[**Zero123++**](https://github.com/SUDO-AI-3D/zero123plus), [**InstantMesh**](https://github.com/TencentARC/InstantMesh)

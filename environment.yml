@@ -1,0 +1,38 @@
+name: deocc123
+channels:
+  - pytorch
+  - conda-forge
+  - nvidia
+  - defaults
+dependencies:
+  - python=3.10.13
+  - pip=25.3
+  - pytorch==2.1.0
+  - torchvision==0.16.0
+  - torchaudio==2.1.0
+  - pytorch-cuda=11.8
+  - pytorch-lightning==2.1.2
+  - tqdm
+  - einops
+  - Ninja
+  - plyfile
+  - pip:
+    - gradio==3.43.0
+    - huggingface-hub==0.24.6
+    - omegaconf
+    - torchmetrics
+    - webdataset
+    - tensorboard
+    - accelerate
+    - PyMCubes
+    - trimesh
+    - rembg
+    - transformers==4.44.2
+    - diffusers==0.20.2
+    - bitsandbytes
+    - imageio[ffmpeg]
+    - xatlas
+    - xformers==0.0.22.post7
+    - segment_anything
+    - onnxruntime
+    - git+https://github.com/NVlabs/nvdiffrast/
